@@ -21,7 +21,8 @@ jobs:
        
 
       - name: Install dependencies
-        run: pip install ccxt requests numpy pandas
+        run: |
+             pip install ccxt requests numpy pandas
              pip install pandas-ta --no-deps
 
       - name: Run scanner
